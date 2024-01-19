@@ -10,7 +10,7 @@ import Product from "./components/pages/Product/index";
 import CartPage from "./components/pages/CartPage/index";
 import Checkout from "./components/pages/Checkout/index";
 import { useStateContext } from "./state";
-import Footer from "./components/utils/Footer/footer";
+// import Footer from "./components/utils/Footer/footer";
 
 function App() {
   const state = useStateContext();
@@ -30,7 +30,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Home />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </BrowserRouter>
   );
